@@ -1,0 +1,33 @@
+{
+  "name": "api-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src"
+  },
+  "keywords": [],
+  "author": "ninjaherodev <ninjaherodev@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.1.0",
+    "standard": "^17.1.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}

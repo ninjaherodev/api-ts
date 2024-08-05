@@ -1,0 +1,39 @@
+### Consulata todas las peliculas
+GET http://localhost:3010/api/v1/movies
+
+### Consulta todas las Peliculas y filtra por el genre "crime"
+GET http://localhost:3010/api/v1/movies?genre=action
+
+### Consultar por id de movie
+GET http://localhost:3010/api/v1/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Crear Movie
+POST http://localhost:3010/api/v1/movies
+Content-Type: application/json
+
+{
+  "sql": "select * from usaers",
+  "title": "Play Boy",
+  "year":2020,
+  "director": "Christopher Nolan",
+  "duration": 148,
+  "poster": "https://www.example.com/posters/inception.jpg",
+  "genre": ["Action", "Adventure"],
+  "rate": 8.8,
+  "clasista":"rick a morty"
+}
+
+### Para Actualizar una Pelicula
+PATCH  http://localhost:3010/api/v1/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e022
+Content-Type: application/json
+
+{
+  "id":333,
+  "title": "Play Boy",
+  "year":"2017",
+  "duration": 120
+  
+}
+
+### Para Eliminar una Pelicula
+DELETE  http://localhost:3010/api/v1/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
